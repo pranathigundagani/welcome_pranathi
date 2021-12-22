@@ -21,6 +21,16 @@ output application/xml
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="8266fb6d-ba56-402b-bc69-136c3064b139" message="endlogger..."/>
+		<first-successful doc:name="First Successful" doc:id="8d6e3c3f-4c41-4776-b566-65967786b824" >
+			<route >
+				<logger level="INFO" doc:name="Logger" doc:id="bcf60144-f2b7-49ef-8d16-2cae045c9de8" message="route2" />
+				<raise-error doc:name="Raise error" doc:id="bcef491a-8313-4353-b3a6-4c7fc9ce863f" type="ANY"/>
+				<logger level="INFO" doc:name="Logger" doc:id="5820b64e-e48a-452e-a2b4-4e5101bae65a" message="route2 error!"/>
+			</route>
+			<route >
+				<logger level="INFO" doc:name="Logger" doc:id="05701d83-a24c-4bf1-9bb4-a41ad2167ef5" message="route1" />
+			</route>
+		</first-successful>
+		<logger level="INFO" doc:name="Logger" doc:id="8266fb6d-ba56-402b-bc69-136c3064b139" message="endlogger..." />
 	</flow>
 </mule>
