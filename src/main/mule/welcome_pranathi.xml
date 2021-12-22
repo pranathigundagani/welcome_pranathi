@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="welcome_pranathiFlow" doc:id="9514d2ab-c7d8-44d2-a3e3-084cc108c8f0" >
 		<http:listener doc:name="Listener" doc:id="b3671478-7885-4912-bd45-5bda319f9fc5" config-ref="HTTP_Listener_config" path="/welcome"/>
-		<logger level="INFO" doc:name="Logger" doc:id="8e83e441-af84-4fb9-8194-318fda5ef80d" message="startlogger"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8e83e441-af84-4fb9-8194-318fda5ef80d" message="startlogger.."/>
 		<ee:transform doc:name="Transform Message" doc:id="7ea1ff01-8567-4182-a5e8-a968de8eff75" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
