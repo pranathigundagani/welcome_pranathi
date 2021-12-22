@@ -21,6 +21,6 @@ output application/xml
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="8266fb6d-ba56-402b-bc69-136c3064b139" message="endlogger"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8266fb6d-ba56-402b-bc69-136c3064b139" message="endlogger..."/>
 	</flow>
 </mule>
